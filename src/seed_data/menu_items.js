@@ -5,4 +5,6 @@ const Items =[
   {name: 'Salmon and Pest sauce'}
 ]
 
-export default Items;
+module.exports= {
+  getAll: () => Items 
+}
