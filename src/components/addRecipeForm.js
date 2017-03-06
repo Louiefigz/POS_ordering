@@ -8,6 +8,7 @@ constructor(){
   this.handleChange = this.handleChange.bind(this);
 }
 handleSubmit(event){
+  event.preventDefault();
   this.props.submitForm();
 }
 handleChange(event){
@@ -19,9 +20,9 @@ handleChange(event){
     return (
 
     <div>
-      <form onSubmit={this.handleSubmit()}>
+      <form>
         <input type="text"  onChange={this.handleChange} />
-        <button type="submit" >Submit</button>
+        <button type="submit" onClick={this.handleSubmit}>Submit</button>
       </form>
     </div>
   )

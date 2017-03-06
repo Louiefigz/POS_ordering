@@ -19,10 +19,13 @@ class App extends Component {
   }
 
   SubmitForm(){
-    debugger
-    // this.setState({
-    //   recipes: [...this.state.recipes, ]
-    // })
+    var recipe={}
+     recipe = {
+      name: this.state.recipeName
+    }
+    this.setState({
+      recipes: this.state.recipes.concat(recipe)
+    })
   }
 
   ChangeRecipeName(input){
