@@ -15,13 +15,11 @@ handleChange(event){
   this.props.changeName(event.target.value);
 }
 
-
   render(){
     return (
-
     <div>
       <form>
-        <input type="text"  onChange={this.handleChange} />
+        <input type="text" onChange={this.handleChange} value={this.props.currentName}/>
         <button type="submit" onClick={this.handleSubmit}>Submit</button>
       </form>
     </div>

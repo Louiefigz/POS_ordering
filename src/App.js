@@ -24,7 +24,8 @@ class App extends Component {
       name: this.state.recipeName
     }
     this.setState({
-      recipes: this.state.recipes.concat(recipe)
+      recipes: this.state.recipes.concat(recipe),
+      recipeName: ""
     })
   }
 
